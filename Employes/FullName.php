@@ -16,9 +16,4 @@ class FullName
         $this->lastName = $lastName;
         $this->patronymic = $patronymic;
     }
-
-    public function getName()
-    {
-        return '$firstName ' . '$lastName ' . '$patronymic';
-    }
 }
