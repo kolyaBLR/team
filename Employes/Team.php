@@ -3,9 +3,9 @@ class Team
 {
     private $employes = array();
 
-    public function addEmployee($empl)
+    public function addEmployee(Employee $employee)
     {
-        $this->employes[] = $empl;
+        $this->employes[] = $employee;
     }
 
     public function getSumSalary()

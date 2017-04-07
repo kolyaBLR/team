@@ -1,17 +1,16 @@
 <?php
-require_once "FullName.php";
-class Employee extends FullName
+class Employee
 {
+    private $firstName;
+    private $lastName;
+    private $patronymic;
     private $salary;
 
-    public function __construct($firstName, $lastName, $patronymic, $salary)
+    public function __construct(string $firstName, string $lastName, string $patronymic, int $salary)
     {
-        parent::__construct($firstName, $lastName, $patronymic);
-        $this->setSalary($salary);
-    }
-
-    public function setSalary($salary)
-    {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+        $this->patronymic = $patronymic;
         $this->salary = $salary;
     }
 
